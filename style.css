@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+@import url('https://fonts.cdnfonts.com/css/metropolis');
 
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'MetropolisNF', sans-serif; */
+
+::-webkit-scrollbar{
+    width: 0;
+    background: none;
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -17,9 +27,11 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
-
+.ads{
+    font-weight: bolder;
+}
 /* header */
 
 .header{
@@ -49,6 +61,7 @@ body{
     height: 62px;
     width: 80px;
     margin-left: 50px;
+    cursor: pointer;
 }
 .header-center{
     display: flex;
@@ -63,6 +76,7 @@ body{
     margin-right: 30px;
     font-size: 16px;
     letter-spacing: 0.4px;
+    cursor: pointer;
 }
 
 .search{
@@ -87,14 +101,137 @@ body{
 .search i{
     margin-right: 5px;
 }
+.cart{
+    cursor: pointer;
 
+}
 .cart i{
     font-size: 25px;
     color: #000;
     margin-left: 15px
+
 }
 /* header */
 .section-two img {
     width: 100vw;
     height: auto;
+}
+
+.section-3{
+    width: 100vw;
+    height: 450px;
+    /* background-color: #c79a9a; */
+    padding: 40px;
+}
+.bestseller{
+    font-family: 'MetropolisNF', sans-serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.red-line{
+    border-bottom: 2px solid red;
+}
+
+.row-box{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.bestseller-box{
+    width: 300px;
+    height:350px;
+    /* background-color: #771f1f; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.item-box{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+.item-box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.item-bg{
+    background-color: antiquewhite;
+}
+.item-name{
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.section-4{
+    width: 100vw;
+    height: 400px;
+    padding: 40px;
+}
+.deals-top{
+    margin-bottom: 25px;
+    font-family: 'MetropolisNF', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+}
+.deals{
+    font-size: 25px;
+}
+.veiw{
+    font-size: 15px;
+    color: #2f5b96;
+    font-weight: bold
+}
+.summersale{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.summersale img{
+    height: 150px;
+    max-width: calc(100vw - 80px);
+}
+
+.sale{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.right-line{
+    content:'';
+    width: 1px;
+    height: 80px;
+    background-color: #000;
+    position: absolute;
+    top: 28%;
+    left: 48%;
+}
+
+.summersale-right{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    gap: 10px;
+    
+}
+.hour{
+    display: flex;
+    align-items: center;
+}
+.hour span{
+    font-size: 38px;
+    font-weight: bolder;
 }
