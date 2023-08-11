@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
 @import url('https://fonts.cdnfonts.com/css/metropolis');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 /* font-family: 'Raleway', sans-serif; */
 /* font-family: 'MetropolisNF', sans-serif; */
+/* font-family: 'Manrope', sans-serif; */
+
 
 ::-webkit-scrollbar{
     width: 0;
@@ -36,11 +39,14 @@ body{
 
 .header{
     width: 100vw;
-    height: 100px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 0.2px solid #505050;
 }
 .header-left{
     width: 55vw;
@@ -120,7 +126,6 @@ body{
 .section-3{
     width: 100vw;
     height: 450px;
-    /* background-color: #c79a9a; */
     padding: 40px;
 }
 .bestseller{
@@ -169,7 +174,7 @@ body{
 
 .section-4{
     width: 100vw;
-    height: 400px;
+    height: 210px;
     padding: 40px;
 }
 .deals-top{
@@ -200,7 +205,7 @@ body{
 
 .sale{
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 3%;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -234,4 +239,158 @@ body{
 .hour span{
     font-size: 38px;
     font-weight: bolder;
+}
+
+.section-5{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 20px;
+}
+.offer-box{
+    width: 344px;
+    height: 510px;
+    background-color: #FAFAFAf4;
+    border-radius: 15px;
+    border: 0.01px solid ;
+    border-color: #868686;
+}
+.offer-img{
+    width: 344px;
+    height: 400px;
+}
+.offer-img img{
+    width: 344px;
+    height: 400px;
+    border-radius: 15px 15px 0 0;
+}
+.super-saver{
+    font-family: 'MetropolisNF', sans-serif;
+    font-weight: bold;
+    /* z-index: 3; */
+    position: absolute;
+    margin-top: 14px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #000;
+    padding: 3px 5px 3px 3px;
+    border-radius:0 5px 5px 0;
+}
+.feature{
+    font-family: 'Manrope', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    height: 25px;
+    width: 250px;
+    background-color: #FBC509;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 390px 0 0 45px;
+}
+.offer-box-bottom{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.offer-box-bottom-left{
+    gap: 10px;
+
+}
+.rating{
+    gap: 2px;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.rating span{
+    font-size: 12.5px;
+}
+.name{
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 7px;
+
+}
+.price{
+    display: flex;
+    font-family: 'MetropolisNF', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.new-price{
+    font-weight: bolder;
+    font-size: 17px;
+}
+.old-price{
+    font-size: 13px;
+    color: #aaaaaa;
+}
+.offer-percentage{
+    color: rgb(17,185,133);
+    font-size: 11px;
+    font-weight: bold;
+}
+.choose-color{
+    display: flex;
+    position: relative;
+}
+.colors{
+    display: flex;
+}
+.color-style{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.color-1{
+    position: absolute;
+    right: 45px;
+}
+.color-2{
+    position: absolute;
+    right: 35px;
+    
+}
+.color-3{
+    position: absolute;
+    right: 25px;
+}
+.color-number{
+    position: absolute;
+    right: 0;
+    font-size: medium;
+}
+.add-cart{
+    margin-top: 30px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #1A2024;
+    cursor: pointer;
+}
+
+.section-7{
+    
+    overflow-x: hidden;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.section-7-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
 }
